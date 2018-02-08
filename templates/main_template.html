@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
-{% for song in songs %}
-    name: {{ song.name }}
+<div>
     <br>
-    author: {{ song.artist.name }}
-{% endfor %}
+    <br>
+    {% for song in songs %}
+        <div class="btn btn-success">
+            name: {{ song.name }}
+            <br>
+            author: {{ song.artist.name }}
+        </div>
+    {% endfor %}
+</div>
 
 </body>
 </html>
